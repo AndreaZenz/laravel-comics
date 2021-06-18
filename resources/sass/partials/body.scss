@@ -1,6 +1,7 @@
 .black-bg{
     background-color: $background-black;
     position: relative;
+    padding-bottom: 30px;
 }
 
 .current-series{
@@ -25,8 +26,33 @@
     justify-content: space-evenly;
     .card{
         padding: 20px;
+        width: calc(100% / 6);
         h2{
             color: white;
+            font-size: 16px;
         }
     }
+}
+
+.button{
+    margin: auto;
+    width: 200px;
+    height: 40px;
+    background-color: $backgroud-blue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.blue-bg{
+    display: flex;
+    height: 100px;
+    background-color: $backgroud-blue;
 }
