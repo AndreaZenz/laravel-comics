@@ -1,0 +1,32 @@
+.black-bg{
+    background-color: $background-black;
+    position: relative;
+}
+
+.current-series{
+    width: 300px;
+    background-color: $backgroud-blue;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -34px;
+    h2{
+        color: white;
+        font-size: 30px;
+    }
+}
+
+
+.card-container{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .card{
+        padding: 20px;
+        h2{
+            color: white;
+        }
+    }
+}

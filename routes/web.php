@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+    
+//     return view('layouts.index');
+// });
+
+
+Route::get('/', function(){
+    $comics = config("comics");
+
+    return view("layouts.index", ["comics" => $comics]);
+})->name("pagina-comics");
