@@ -12,7 +12,6 @@
 </head>
 <body>
     @include('partials.header')
-
     <div class="black-bg">
         <div class="container">
             <div class="current-series">
@@ -23,8 +22,10 @@
             <div class="card-container">
                 @foreach($comics as $comic)
                 <div class="card">
-                    <img src="{{ $comic['thumb'] }}" alt="">
-                    <h2>{{ $comic['series'] }}</h2>
+                    <a href="{{route("comics-info")}}">
+                        <img src="{{ $comic['thumb'] }}" alt="">
+                        <h2>{{ $comic['series'] }}</h2>
+                    </a>
                 </div>
                 @endforeach
             </div>

@@ -1,0 +1,84 @@
+.blue-bar{
+    background-color: $backgroud-blue;
+    height: 100px;
+    position: relative;
+    .comic-view{
+        height: 300px;
+        width: 200px;
+        position: absolute;
+        top: -250px;
+        left: 17%;
+        background-color: red;
+        small{
+            background-color:#00a9d9 ;
+            color: white;
+            font-size: 15px;
+        }
+        .top{
+            position: absolute;
+        }
+        .bottom{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+
+.container-less{
+    width: 65%;
+    margin: auto;
+    .single-comic{
+        padding:24px 0;
+        display: flex;
+        justify-content: space-between;
+        .comics-info{
+            width: calc(100% / 1.6);
+            h1{
+                color: #003f5e;
+                padding-top: 30px;
+                padding-bottom: 24px;
+            }
+            p{
+                line-height: 28px;
+                color: darkslategrey;
+            }
+            .price{
+                display: flex;
+                line-height: 50px;
+                padding-bottom: 24px;
+                .us-price{
+                    box-shadow: 1px 1px black;
+                    width: 450px;
+                    background-color: #55ba59;
+                    padding-left: 14px;
+                    color: #baf980;
+                    
+                    .white{
+                        color: white;
+                    }
+                    .two{
+                        float: right;
+                        padding-right: 14px;
+                    };
+                }
+                .check-available{
+                    border-left: 1px solid black;
+                    box-shadow: 1px 1px black;;
+                    width: 200px;
+                    background-color: #55ba59;
+                    color: white;
+                    text-align: center;
+                    font-weight: 500;
+                }
+            }
+        }
+        
+        .advertisement{
+            width: calc(100% / 3);
+        }
+    
+    }
+}
