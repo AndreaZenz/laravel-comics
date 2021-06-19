@@ -53,6 +53,21 @@
 
 .blue-bg{
     display: flex;
-    height: 100px;
+    height: 200px;
     background-color: $backgroud-blue;
+}
+
+.jumbo-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    img{
+        height: 100px;
+        width: 80px;
+    }
+    p{
+        color: white;
+    }
 }
