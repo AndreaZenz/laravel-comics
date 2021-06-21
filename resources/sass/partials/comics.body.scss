@@ -90,13 +90,68 @@
         }
     }
 }
-
-.splitter{
-    display: flex;
-    .half{
-        width: calc(100% / 2);
-        height: 400px;
-        
+.container-splitter {
+    background-color: #f6f6f6;
+    .splitter {
+        padding: 24px 0;
+        display: flex;
+        width: 65%;
+        margin: auto;
+        justify-content: space-between;
+        .half {
+            width: calc(100% / 2.05);
+            height: 300px;
+            h2 {
+                padding: 24px 0;
+            }
+            .content {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgb(190, 192, 192);
+                padding-bottom: 16px;
+                padding-top: 16px;
+                .title {
+                    width: 20%;
+                    p {
+                        margin-right: 50px;
+                        display: inline;
+                    }
+                }
+                .title-text {
+                    width: 70%;
+                    a {
+                        text-decoration: none;
+                        color: $backgroud-blue;
+                    }
+                }
+            }
+        }
     }
+}
 
+.comic-bar {
+    background-color: #f6f6f6;
+    .h100 {
+        display: flex;
+        width: 65%;
+        margin: auto;
+        align-items: center;
+        .details {
+            width: calc(100% / 4);
+            padding: 18px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 1px solid rgb(190, 192, 192);
+            border-right: 1px solid rgb(190, 192, 192);
+            height: 100%;
+            p{
+                text-align: center;
+                color: rgb(155, 167, 167);
+            }
+            img{
+                height: 60px;
+            }
+        }
+    }
 }
