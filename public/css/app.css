@@ -263,7 +263,6 @@
   position: absolute;
   top: -250px;
   left: 17%;
-  background-color: red;
 }
 
 .blue-bar .comic-view small {
@@ -278,44 +277,50 @@
 
 .blue-bar .comic-view .bottom {
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  right: 8px;
+  bottom: 9px;
+  width: 96%;
   text-align: center;
 }
 
-.container-less {
+.full {
+  border-bottom: 1px solid #9ba0a0;
+  padding-bottom: 24px;
+}
+
+.full .container-less {
   width: 65%;
   margin: auto;
 }
 
-.container-less .single-comic {
+.full .container-less .single-comic {
   padding: 24px 0;
   display: flex;
   justify-content: space-between;
 }
 
-.container-less .single-comic .comics-info {
-  width: calc(100% / 1.6);
+.full .container-less .single-comic .comics-info {
+  width: calc(100% / 2);
 }
 
-.container-less .single-comic .comics-info h1 {
+.full .container-less .single-comic .comics-info h1 {
   color: #003f5e;
   padding-top: 30px;
   padding-bottom: 24px;
 }
 
-.container-less .single-comic .comics-info p {
+.full .container-less .single-comic .comics-info p {
   line-height: 28px;
   color: darkslategrey;
 }
 
-.container-less .single-comic .comics-info .price {
+.full .container-less .single-comic .comics-info .price {
   display: flex;
   line-height: 50px;
   padding-bottom: 24px;
 }
 
-.container-less .single-comic .comics-info .price .us-price {
+.full .container-less .single-comic .comics-info .price .us-price {
   box-shadow: 1px 1px black;
   width: 450px;
   background-color: #55ba59;
@@ -323,16 +328,16 @@
   color: #baf980;
 }
 
-.container-less .single-comic .comics-info .price .us-price .white {
+.full .container-less .single-comic .comics-info .price .us-price .white {
   color: white;
 }
 
-.container-less .single-comic .comics-info .price .us-price .two {
+.full .container-less .single-comic .comics-info .price .us-price .two {
   float: right;
   padding-right: 14px;
 }
 
-.container-less .single-comic .comics-info .price .check-available {
+.full .container-less .single-comic .comics-info .price .check-available {
   border-left: 1px solid black;
   box-shadow: 1px 1px black;
   width: 200px;
@@ -342,7 +347,21 @@
   font-weight: 500;
 }
 
-.container-less .single-comic .advertisement {
+.full .container-less .single-comic .advertisement {
   width: calc(100% / 3);
+}
+
+.full .container-less .single-comic .advertisement h3 {
+  padding-left: 150px;
+  color: darkslategrey;
+}
+
+.splitter {
+  display: flex;
+}
+
+.splitter .half {
+  width: calc(100% / 2);
+  height: 400px;
 }
 
