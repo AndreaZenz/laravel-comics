@@ -41,6 +41,7 @@
 
 .navbar a:hover {
   color: #0282f9;
+  border-bottom: 5px solid #0282f9;
 }
 
 .navbar img {
@@ -67,6 +68,10 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+.active {
+  border-bottom: 5px solid #0282f9;
 }
 
 .black-bg {

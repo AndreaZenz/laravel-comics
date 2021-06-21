@@ -23,6 +23,7 @@
         color: black;
         &:hover{
             color: $backgroud-blue;
+            border-bottom: 5px solid $backgroud-blue;
         }
     }
     img{
@@ -47,4 +48,8 @@
         object-fit: cover;
         width: 100%;
     }
+}
+
+.active{
+    border-bottom: 5px solid $backgroud-blue;
 }

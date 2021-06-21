@@ -1,3 +1,7 @@
+@php
+    $routeName = Request::route()->getName();
+@endphp
+
 
 <header>
     <div class="blue-header">
@@ -9,7 +13,7 @@
     <div class="container navbar">
         <img src="{{ asset('images/dc-logo.png') }}" alt="DC">
         <h3><a href="">CHARACTERS</a></h3>
-        <h3><a href="{{route("pagina-comics")}}">COMICS</a></h3>
+        <h3><a class="{{ $routeName == 'pagina-comics' ? 'active' : ''}}" href="{{route("pagina-comics")}}">COMICS</a></h3>
         <h3><a href="">MOVIES</a></h3>
         <h3><a href="">TV</a></h3>
         <h3><a href="">GAMES</a></h3>
